@@ -1,11 +1,14 @@
 import config
 import stt
-import tts
+from syntez import TTS
 from fuzzywuzzy import fuzz
 from execute import execute_cmd
 
 print(f"{config.VA_NAME} (v{config.VA_VER}) начал свою работу ...")
 
+
+
+tts = TTS()
 
 def va_respond(voice: str):
     print(voice)
